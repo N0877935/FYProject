@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/background_icon.xml" value="0.16" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/chat_input.xml" value="0.16" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/content_bottom.xml" value="0.16" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_average.xml" value="0.315" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_awful.xml" value="0.315" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_bad.xml" value="0.315" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_baseline_chat_24.xml" value="0.1955" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_baseline_female_24.xml" value="0.382" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_baseline_male_24.xml" value="0.1955" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_baseline_medical_services_24.xml" value="0.1955" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_baseline_psychology_24.xml" value="0.1955" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_email.xml" value="0.1" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_email_icon.xml" value="0.3915" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_good.xml" value="0.315" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_great.xml" value="0.1335" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_padlock.xml" value="0.133" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_signout.xml" value="0.1" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/ic_user.xml" value="0.319" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/input_background.xml" value="0.1295" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/received_message_background.xml" value="0.142" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/sent_message_background.xml" value="0.165" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/shape.xml" value="0.3155" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/drawable/top_content.xml" value="0.1" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_chat_activitiy.xml" value="0.33" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_checker.xml" value="0.25" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_emergencies.xml" value="0.3731481481481482" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_female.xml" value="0.3140625" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_fire_store_log_in.xml" value="0.2421875" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_fire_store_sign_up.xml" value="0.2421875" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_gps.xml" value="0.5" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_initial.xml" value="0.3098958333333333" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_login.xml" value="0.5541666666666667" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_male.xml" value="0.3072916666666667" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_map.xml" value="0.3125" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_map2.xml" value="0.32447916666666665" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_maps.xml" value="0.3125" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_mental_health.xml" value="0.3125" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_mood_log.xml" value="0.3082051282051282" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_navigation.xml" value="0.2675925925925926" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_prof_chat.xml" value="0.3807291666666667" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_registartion.xml" value="0.35648148148148145" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_registration.xml" value="0.33" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_student_chat.xml" value="0.25" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/activity_users.xml" value="0.33" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/container_recent_convo.xml" value="0.3731481481481482" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/container_user.xml" value="0.22" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/fragment_dashboard.xml" value="0.2675925925925926" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/fragment_health.xml" value="0.1" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/fragment_home.xml" value="0.2675925925925926" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/fragment_info.xml" value="0.33" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/fragment_mood.xml" value="0.5704387990762124" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/fragment_notifications.xml" value="0.2675925925925926" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/popup_window.xml" value="0.33" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/received_message_container.xml" value="0.3072916666666667" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/sent_message_container.xml" value="0.3072916666666667" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/top_content.xml" value="0.1" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/layout/web_layout.xml" value="0.28425925925925927" />
+        <entry key="..\:/Documents/FYProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2675925925925926" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

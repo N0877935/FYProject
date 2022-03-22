@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_background3"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".ui.mood.MoodFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_labellat"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="17dp"
+                    android:text="Latitude:"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                     />
+
+                <TextView
+                    android:id="@+id/latitude"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="-37dp"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_labellon"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Longitude:"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_labellat" />
+
+                <TextView
+                    android:id="@+id/longitude"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="-20dp"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_labelaccuracy"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="92dp"
+                    android:text="Accuracy:"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/accuracy"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="-110dp"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/tv_labelaccuracy"
+                    app:layout_constraintTop_toTopOf="@+id/tv_labelaccuracy" />
+
+                <TextView
+                    android:id="@+id/tv_lbladdress"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Address:"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="-20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="test"
+                     />
+
+
+
+
+                <Button
+                    android:id="@+id/btn_showMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Map"
+                    android:layout_marginTop="20dp"
+                     />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="409dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="32dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/btnAverage"
+            android:layout_width="68dp"
+            android:layout_height="51dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_average"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507" />
+
+        <TextView
+            android:id="@+id/moodGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.088"
+            app:layout_constraintStart_toEndOf="@+id/moodGreat"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.576" />
+
+        <TextView
+            android:id="@+id/moodAwful"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Awful"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.632"
+            app:layout_constraintStart_toEndOf="@+id/moodBad"
+            app:layout_constraintTop_toBottomOf="@+id/btnAwful"
+            app:layout_constraintVertical_bias="0.028" />
+
+        <ImageButton
+            android:id="@+id/btnAwful"
+            android:layout_width="68dp"
+            android:layout_height="51dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_awful"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507" />
+
+        <ImageButton
+            android:id="@+id/btnGood"
+            android:layout_width="68dp"
+            android:layout_height="51dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_good"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.244"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507" />
+
+        <TextView
+            android:id="@+id/moodBad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bad"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.187"
+            app:layout_constraintStart_toEndOf="@+id/moodAverage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <TextView
+            android:id="@+id/moodGreat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Great"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.576" />
+
+        <ImageButton
+            android:id="@+id/btnGreat"
+            android:layout_width="68dp"
+            android:layout_height="51dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_great"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.508"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <TextView
+            android:id="@+id/moodAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintStart_toEndOf="@+id/moodGood"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <ImageButton
+            android:id="@+id/btnBad"
+            android:layout_width="68dp"
+            android:layout_height="51dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_bad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.74"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507" />
+
+
+        <TextView
+            android:id="@+id/moodText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today you feel:"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.634" />
+
+        <TextView
+            android:id="@+id/moodTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.754"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.634" />
+
+        <TextView
+            android:id="@+id/tv_labelsensor"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:text="Sensor:"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sw_gps" />
+
+        <TextView
+            android:id="@+id/sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cell Tower + Wifi"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tv_labelsensor"
+            app:layout_constraintTop_toTopOf="@+id/tv_labelsensor" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sw_locationsupdates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Location Updates"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sensor" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sw_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS/SavePower"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/moodText2" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_labelCrumbCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="292dp"
+            android:text="WayPoints:"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_labelsensor"
+            app:layout_constraintVertical_bias="0.117" />
+
+        <TextView
+            android:id="@+id/tv_counterOfCrumbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toEndOf="@+id/tv_labelCrumbCounter"
+            app:layout_constraintTop_toBottomOf="@+id/sensor"
+            app:layout_constraintVertical_bias="0.120000005" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

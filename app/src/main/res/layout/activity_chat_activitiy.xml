@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorPrimary"
+    tools:context=".utilities.ChatActivitiy">
+
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/top_content"
+        app:layout_constraintBottom_toBottomOf="@id/sendLayout"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/topBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/design_default_color_primary"
+        app:layout_constraintBottom_toBottomOf="@id/supporterView"
+        app:layout_constraintBottom_toTopOf="@id/supporterView"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/im_back"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:padding="@dimen/_6sdp"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/im_info"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:padding="@dimen/_6sdp"
+        android:src="@drawable/ic_round_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tint="@color/white"/>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/im_back"
+        app:layout_constraintEnd_toStartOf="@id/im_info"
+        app:layout_constraintStart_toEndOf="@id/im_back"
+        app:layout_constraintTop_toTopOf="@id/im_back"/>
+
+    <View
+        android:id="@+id/supporterView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/im_back"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:padding="@dimen/_18sdp"
+        android:visibility="gone"
+        app:stackFromEnd="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
+        app:layout_constraintTop_toTopOf="@id/im_back"
+        app:layout_constraintTop_toBottomOf="@id/supporterView"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundView"
+        app:layout_constraintEnd_toEndOf="@id/backgroundView"
+        app:layout_constraintStart_toStartOf="@id/backgroundView"
+        app:layout_constraintTop_toTopOf="@id/backgroundView"/>
+
+
+    <FrameLayout
+        android:id="@+id/sendLayout"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:layout_marginRight="@dimen/_18sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:background="@drawable/chat_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:padding="@dimen/_8sdp"
+        android:src="@drawable/ic_round_send_24"
+        android:tint="@color/white"/>
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/chatInput"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:background="@drawable/chat_input"
+        android:hint="Type Message"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:textColor="@color/white"
+        android:textColorHint="#AE9A9A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sendLayout"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

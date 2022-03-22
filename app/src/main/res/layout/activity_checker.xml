@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/symptom_background"
+    android:orientation="vertical"
+    tools:context=".checkerActivity">
+
+    <TextView
+        android:id="@+id/txtSymptomChecker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Symptom Checker"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Who are you taking the test for?"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-35dp"
+        android:layout_marginLeft="5dp">
+        <RadioButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginLeft="200dp"
+    android:text="Myself"
+    android:textColor="@color/white"
+    android:textSize="15sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Someone else"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age?"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What symptoms are most common? '\n'
+        Select those that apply."
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioBtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The adult has trouble maintaining focus."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/radioBtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The adult is often impulsive."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/radioBtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The adult loses items and can't get a handle on clutter."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/radioBtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The adult is often irritable or angry."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/radioBtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The adult is socially akward and avoids social \n situations."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/radioBtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The adult has past trauma."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/radioBtn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The adult has odd behaviours and thought patterns."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/radioBtn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The adult suffers from extreme, uncharacteristic moods \nthat can last for long periods. "
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/radioBtn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The adult is very anxious or worried."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/radioBtn10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The adult has trouble planning and managing time."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/radioBtn11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The adult has sleeping problems."
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/radioBtn12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The adult is sensitive to some sights or sensory inputs."
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/radioBtn13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The adult has difficulty reading or writing."
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/radioBtn14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The adult has difficulty with spoken language."
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/radioBtn15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other."
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
