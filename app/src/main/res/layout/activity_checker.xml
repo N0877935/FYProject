@@ -109,15 +109,16 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radioBtn1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="The adult has trouble maintaining focus."
                     android:textSize="15sp"
                     android:textColor="@color/white"
-                    android:textStyle="bold"/>
-                <RadioButton
+                    android:textStyle="bold"
+                    />
+                <CheckBox
                     android:id="@+id/radioBtn2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -125,7 +126,7 @@
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radioBtn3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -133,7 +134,7 @@
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radioBtn4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -141,15 +142,15 @@
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radioBtn5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="The adult is socially akward and avoids social \n situations."
+                    android:text="The adult is socially awkward and avoids social \n situations."
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radioBtn6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -157,7 +158,7 @@
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radioBtn7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -165,7 +166,7 @@
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radioBtn8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -173,7 +174,7 @@
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radioBtn9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -181,7 +182,7 @@
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radioBtn10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -189,7 +190,7 @@
                     android:textSize="15sp"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
-        <RadioButton
+        <CheckBox
             android:id="@+id/radioBtn11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -197,7 +198,7 @@
             android:textSize="15sp"
             android:textColor="@color/white"
             android:textStyle="bold"/>
-        <RadioButton
+        <CheckBox
             android:id="@+id/radioBtn12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -205,31 +206,23 @@
             android:textSize="15sp"
             android:textColor="@color/white"
             android:textStyle="bold"/>
-            <RadioButton
+
+            <CheckBox
                 android:id="@+id/radioBtn13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="The adult has difficulty reading or writing."
-                android:textSize="15sp"
-                android:textColor="@color/white"
-                android:textStyle="bold"/>
-            <RadioButton
-                android:id="@+id/radioBtn14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="The adult has difficulty with spoken language."
                 android:textSize="15sp"
                 android:textColor="@color/white"
                 android:textStyle="bold"/>
-            <RadioButton
-                android:id="@+id/radioBtn15"
+            <CheckBox
+                android:id="@+id/radioBtn14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Other."
                 android:textSize="15sp"
                 android:textColor="@color/white"
                 android:textStyle="bold"/>
-
             <Button
                 android:id="@+id/submitBtn"
                 android:layout_width="wrap_content"
