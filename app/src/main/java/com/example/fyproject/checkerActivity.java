@@ -11,10 +11,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.example.fyproject.ui.info.InfoFragment;
@@ -24,8 +26,10 @@ import com.example.fyproject.utilities.Constants;
 public class checkerActivity extends AppCompatActivity {
 
     Button submit;
+    RadioGroup radioGroup;
     CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7, cb8, cb9, cb10, cb11, cb12, cb13, cb14;
-    TextView symptom1, symptom2, symptom3, symptom4, symptom5, symptom6, symptom7, symptom8;
+    TextView symptom1, symptom2, symptom3, symptom4, symptom5, symptom6, symptom7, symptom8, warningText;
+    EditText editTextNumber;
     Button profChat, returnHome;
 
     @Override
@@ -33,11 +37,21 @@ public class checkerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checker);
 
+        radioGroup = findViewById(R.id.testRadio);
+        warningText = findViewById(R.id.warning);
+        editTextNumber = findViewById(R.id.editTextNumber);
+        String editTextNumberStr = editTextNumber.getText().toString();
+
         submit = findViewById(R.id.submitBtn);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                popUpWindow(view);
+                if (radioGroup.getCheckedRadioButtonId() == -1) {
+                    warningText.setText("Please enter who you are taking the test for and their age.");
+                } else {
+                    warningText.setVisibility(View.INVISIBLE);
+                    popUpWindow(view);
+                }
             }
         });
 
@@ -59,6 +73,7 @@ public class checkerActivity extends AppCompatActivity {
         cb12 = findViewById(R.id.radioBtn12);
         cb13 = findViewById(R.id.radioBtn13);
         cb14 = findViewById(R.id.radioBtn14);
+
 
         LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         View popupView = inflater.inflate(R.layout.popup_window, null);
@@ -87,10 +102,16 @@ public class checkerActivity extends AppCompatActivity {
         symptom7 = popupView.findViewById(R.id.Sleep);
         symptom8 = popupView.findViewById(R.id.Trauma);
 
+        if (radioGroup.getCheckedRadioButtonId() == -1) {
+            warningText.setText("Please enter who you are taking the test for and their age.");
+        } else {
+            warningText.setVisibility(View.INVISIBLE);
+        }
+
         // maintaining focus or impulsive, ADHD
-        if (cb1.isChecked() || cb2.isChecked()  || cb10.isChecked()|| cb12.isChecked()){
+        if (cb1.isChecked() || cb2.isChecked() || cb10.isChecked() || cb12.isChecked()) {
             symptom1.setVisibility(View.VISIBLE);
-        } else{
+        } else {
             symptom1.setVisibility(View.INVISIBLE);
         }
         // clutter, Hoarding
@@ -100,13 +121,13 @@ public class checkerActivity extends AppCompatActivity {
             symptom4.setVisibility(View.INVISIBLE);
         }
         // irritable or angry, Depression, Bipolar
-        if (cb4.isChecked()){
+        if (cb4.isChecked()) {
             symptom3.setVisibility(View.VISIBLE);
         } else {
             symptom3.setVisibility(View.INVISIBLE);
         }
         // avoids social situations, anxiety
-        if (cb5.isChecked() || cb9.isChecked() || cb12.isChecked() || cb13.isChecked()){
+        if (cb5.isChecked() || cb9.isChecked() || cb12.isChecked() || cb13.isChecked()) {
             symptom2.setVisibility(View.VISIBLE);
         } else {
             symptom2.setVisibility(View.INVISIBLE);
@@ -118,7 +139,7 @@ public class checkerActivity extends AppCompatActivity {
             symptom8.setVisibility(View.INVISIBLE);
         }
         //strange mood, schizophrenia
-        if (cb7.isChecked() || cb8.isChecked()){
+        if (cb7.isChecked() || cb8.isChecked()) {
             symptom6.setVisibility(View.VISIBLE);
             symptom5.setVisibility(View.VISIBLE);
         } else {
@@ -135,16 +156,6 @@ public class checkerActivity extends AppCompatActivity {
         ///////////////////////////////////////////
 
 
-
-//        profChat = findViewById(R.id.contactProf);
-//        profChat.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(checkerActivity.this , profChatActivity.class);
-//                startActivity(intent);
-//            }
-//            });
     }
-
 
 }

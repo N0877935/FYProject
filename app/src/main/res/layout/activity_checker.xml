@@ -35,21 +35,22 @@
         android:layout_marginLeft="5dp"/>
 
     <RadioGroup
+        android:id="@+id/testRadio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="-35dp"
-        android:layout_marginLeft="5dp">
+        android:layout_marginStart="5dp">
         <RadioButton
+            android:id="@+id/myself"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-
-    android:layout_marginLeft="200dp"
+    android:layout_marginStart="200dp"
     android:text="Myself"
     android:textColor="@color/white"
-    android:textSize="15sp"
-            android:textStyle="bold"/>
+    android:textSize="15sp" android:textStyle="bold"/>
         <RadioButton
+            android:id="@+id/someoneElse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Someone else"
@@ -87,6 +88,17 @@
         android:background="@color/white"
         android:layout_marginTop="10dp"
         />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/red"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginLeft="5dp"/>
 
     <TextView
         android:layout_width="wrap_content"
